@@ -8,7 +8,7 @@ if ($_POST !=null)
 {
     $nama = $_GET['nama'];
     $email = $_GET['email'];
-    $nomor_hp = $_GET ['nomor_wa'];
+    $nomor_wa = $_GET ['nomor_wa'];
 }
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ if ($_POST !=null)
 <body>
 
     <!-- Header -->
-    <header class="bg-dark text-white"> 
+    <header class="bg-dark text-warning"> 
         <p class="py-3 text-uppercase fw-bolder">Isi data Siswa</p>
     </header>
 

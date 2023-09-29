@@ -11,7 +11,7 @@
 
     <!-- Header -->
     <header class="bg-dark text-white"> 
-        <p class="py-3 text-uppercase fw-bolder"> Data Siswa</p>
+        <p class="py-3 text-uppercase fw-bolder"> Isi Data Siswa</p>
     </header>
 
     <!-- Content -->
@@ -32,7 +32,7 @@
                 <label for="nomor_wa" class="form-label">Nomor WA</label>
                 <input type="number" name="nomor_wa" class="form-control" id="nomor_wa" required>
                 </div>
-                <button class="btn btn-dark text-white">Simpan</button>
+                <button class="btn btn-primary text-white">Simpan</button>
               </form>
 
                 </div>

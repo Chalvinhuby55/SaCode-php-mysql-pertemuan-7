@@ -1,3 +1,37 @@
+<?php
+
+if ($_POST !=null)
+{
+    $email = $_POST ['email'];
+    $password = $_POST ['password'];
+    if($email == "cjemihuby@gmail.com" && $password == "87654321")
+{
+    echo 
+    "
+    <script>
+    alert('Berhasil login')
+    window.location.href = 'berhasil-login.php';
+    </script>
+    ";
+}else
+{
+    echo 
+    "
+    <script>
+    alert('Gagal login')
+    alert ('Kata sandi atau password salah')
+    </script>
+    ";
+}
+}
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,29 +44,25 @@
 <body>
 
     <!-- Header -->
-    <header class="bg-dark text-white"> 
-        <p class="py-3 text-uppercase fw-bolder"> Isi Data Siswa</p>
+    <header class="bg-dark text-warning text-center"> 
+        <p class="py-3 text-uppercase fw-bolder"> Halaman LogIn</p>
     </header>
 
     <!-- Content -->
     <section>
         <div class="container">
-            <div class="row">
-                <div class="co-6">
-                 <form action="view.php" method="get">
-                <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" name="nama" class="form-control" id="nama" required>
-                </div>
+            <div class="row d-flex justify content-center">
+                <div class="co-6 shadow mt-5 p-5 ">
+                 <form action="" method="post">
                 <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" name="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
-                <label for="nomor_wa" class="form-label">Nomor WA</label>
-                <input type="number" name="nomor_wa" class="form-control" id="nomor_wa" required>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="password" required>
                 </div>
-                <button class="btn btn-primary text-white">Simpan</button>
+                <button class="btn btn-dark text-warning">Login</button>
               </form>
 
                 </div>
@@ -40,10 +70,6 @@
 
         </div>
     </section>
-
-  
-
-    
 </body>
 <!-- Link JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
